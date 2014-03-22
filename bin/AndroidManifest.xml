@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my__day"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-feature android:name="android.hardware.location.gps"/>
+<application
+       
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+      
+        android:name="com.myday.map.Location" >
+        <activity
+            android:name="com.myday.albums.MainTapActivity"
+            
+            android:screenOrientation="portrait"
+              >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.myday.albums.PicturesGridShowActivity"
+            android:theme="@style/test"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            android:theme="@style/test"
+            android:name="com.myday.albums.SingleImageActivity"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            android:theme="@style/test"
+            android:name="com.myday.albums.AlbumEditActivity"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            
+            android:name="com.myday.albums.JournalShowActivity"
+            android:theme="@style/test"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            android:theme="@style/test"
+            android:name="com.myday.map.ItemizedOverlayDemo"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            android:theme="@style/test"
+            android:name="com.myday.albums.SameLocationAlbumActivity"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+        <activity
+            android:theme="@style/test"
+            android:name="com.myday.map.Map_Activity"
+            android:screenOrientation="portrait"
+              >
+        </activity>
+       
+        <service android:name="com.baidu.location.f" android:enabled="true"
+			android:process=":remote">
+	<!--  		<intent-filter>
+				<action android:name="com.baidu.location.service_v2.9"></action>
+			</intent-filter>-->
+		</service>
+    </application>
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission> 
+	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission> 
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	 <uses-permission android:name="android.permission.INTERNET"/>
+	 <uses-permission android:name="android.permission.CAMERA"/>
+	 <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+	</manifest>

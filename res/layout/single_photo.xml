@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <!-- 第一行 --> 
+    <TableRow  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="4"
+        >	  
+          <ImageView 
+		    android:id="@+id/view" 
+		    android:layout_width="wrap_content" 	
+		    android:layout_height="wrap_content"
+		    android:adjustViewBounds="true"
+		    android:maxHeight="250dp"
+		    android:maxWidth="250dp"
+		    android:layout_gravity="center" 
+		    android:layout_weight="4"	    
+	      />      
+    </TableRow>
+   <!-- 第2行 --> 
+    <TableRow 
+        android:layout_width="match_parent" 
+        android:layout_weight="1"
+        >
+          
+             <TextView 
+    	      	android:id="@+id/photo_say"
+    	   		android:text="照片描述"  
+    	   		android:layout_width="match_parent" 
+		  		android:layout_height="wrap_content"
+		   		android:textSize="15dp"
+		   		android:gravity="center_horizontal"
+				android:color="#FFFF6600"
+				/>
+             
+    </TableRow>
+      <!-- 第3行 --> 
+    <TableRow 
+        android:layout_width="match_parent" 
+        android:layout_weight="1"
+        >
+          <LinearLayout
+    	      		android:layout_width="match_parent"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				    	      	>
+    		<ImageView 
+			    android:src="@drawable/location_flag"
+			    android:layout_width="wrap_content" 	
+			    android:layout_height="match_parent"
+			    android:paddingLeft="10dp"
+			    android:paddingRight="10dp" 
+			    android:maxHeight="100dp"
+			    android:layout_gravity="center" 	
+			    android:layout_weight="1"    
+	      />      
+             <TextView 
+    	      	android:id="@+id/location"
+    	   		android:text="地点"  
+    	   		android:layout_width="wrap_content" 
+		  		android:layout_height="wrap_content"
+		   		android:textSize="15dp"
+		   		android:gravity="center_horizontal"
+				android:color="#FFFF6600"
+				android:layout_weight="1"
+				/>
+             </LinearLayout>
+    </TableRow>
+    
+      <!-- 第4行   
+    <TableRow 
+        android:layout_width="match_parent" 
+        android:layout_weight="1"
+        >
+            
+    			<Button android:text="edit" 
+    				android:id="@+id/photo_say_edit"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="20dp"				
+					android:layout_weight="1" />
+    					
+    			
+    </TableRow>
+    -->
+</TableLayout>

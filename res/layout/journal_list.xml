@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jourfra_background1" >
+    
+    <ListView
+        android:id="@+id/journallist"
+        android:dividerHeight="3dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	
+        />
+<RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/write_journal"
+            android:text="写图志"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/shape"
+          
+    		android:src="@drawable/shape"/>
+        <Button
+            android:id="@+id/auto_create"
+            android:text="想偷懒"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@drawable/shape"
+    		/>
+        <!-- 
+        <ImageView
+            android:id="@+id/write_journal"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/write_journal"/>
+        <ImageView
+            android:id="@+id/auto_create"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/auto_create"/>
+    	-->
+        </RelativeLayout>
+</RelativeLayout>

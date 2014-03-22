@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/edit_theme"
+        android:text="编辑日志主题"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:gravity="center_vertical"
+    	android:background="#000000"
+    	android:textSize="23sp"
+    	android:paddingRight="10sp"
+    	android:layout_centerVertical="true"
+        >
+        
+    </Button>
+
+</RelativeLayout>
